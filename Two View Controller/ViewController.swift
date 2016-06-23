@@ -21,5 +21,14 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func gotoSecond(sender: AnyObject) {
+        let goToSecond = self.storyboard?.instantiateViewControllerWithIdentifier("sitapaView") as! sitapaViewController
+        
+        self.navigationController?.pushViewController(goToSecond, animated: true)
+        
+    }
+    
+    
+    
 }
 
